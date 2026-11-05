@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "VPN 守护（v2rayN）",
+    "description": "在 Harness 里查看 v2rayN 的节点与网络状态，启动/停止订阅守护，一键修复网络（刷新订阅 + 换最优节点）。"
+  }
+}

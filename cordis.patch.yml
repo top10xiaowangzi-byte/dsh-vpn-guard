@@ -1,0 +1,4 @@
+- insert:
+    - id: vpn-guard
+      name: dsh-vpn-guard
+      config: {}

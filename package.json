@@ -1,0 +1,30 @@
+{
+  "name": "dsh-vpn-guard",
+  "displayName": "VPN 守护（v2rayN）",
+  "version": "1.1.0",
+  "private": true,
+  "description": "在 DeepSeek Harness 里查看 v2rayN 状态、启动/停止订阅守护、一键修复网络（刷新订阅 + 换最优节点）。",
+  "keywords": ["dsh-plugin", "vpn", "v2rayn", "proxy", "subscription", "guard"],
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.mjs",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": ["index.mjs", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["slots"]
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}

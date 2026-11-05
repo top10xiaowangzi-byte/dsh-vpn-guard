@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "VPN Guard (v2rayN)",
+    "description": "Inspect the v2rayN node and network state inside Harness, start/stop the subscription guard, and repair the connection in one click (refresh subscription + switch to the best node)."
+  }
+}
